@@ -1,11 +1,11 @@
 {
-  "name": "Handlebars",
+  "name": "criptoaprendes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -30,7 +30,7 @@
     "request-promise": "^4.2.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.13",
+    "nodemon": "^2.0.15",
     "npm-check-updates": "^11.8.5"
   }
 }
