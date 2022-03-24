@@ -200,6 +200,34 @@ app.get('/oferta', (req,res) => {
     res.render('oferta');
 });
 
+app.get('/binancekiller', (req,res) => {
+    res.render('binancekiller');
+});
+
+app.get('/tradinglatino', (req,res) => {
+    res.render('latino');
+});
+
+app.get('/tradinglatinohold', (req,res) => {
+    res.render('latinohold');
+});
+
+app.get('/tradinglatino1d', (req,res) => {
+    res.render('latino1d');
+});
+
+app.get('/tradinglatino4h', (req,res) => {
+    res.render('latino4h');
+});
+
+app.get('/bitcoinbullet', (req,res) => {
+    res.render('bitcoinbullet');
+});
+
+app.get('/alwayswin', (req,res) => {
+    res.render('alwayswin');
+});
+
 
 
 

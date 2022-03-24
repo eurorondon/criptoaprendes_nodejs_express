@@ -59,13 +59,13 @@ body {
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    color:white;
+    color: white;
 }
 
 .simply-word {
     font-weight: 300;
     font-size: 20px;
-    color:white;
+    color: white;
 }
 
 
@@ -218,7 +218,7 @@ body {
 
 /* Bloque 2  (Servicios  GRID) */
 .servicios {
-    
+
     margin: auto;
     background-color: rgb(255, 255, 255);
     margin-bottom: 50px;
@@ -246,52 +246,148 @@ body {
 
 /* particles index  */
 #particles-js {
-  
+
     /* background-color: #b61924; */
     /* background-image: url(''); */
     /* background-size: cover; */
-  
+
     /* background-repeat: no-repeat; */
-     width: 100%;
+    width: 100%;
     height: 45%;
     background-position: 100% 100%;
     position: absolute;
- 
+
 
 
 }
 
-.gradient{
-background: rgb(0,0,5);
-background: linear-gradient(90deg, rgba(0,0,5,1) 0%, rgba(255,106,12,1) 43%, rgba(255,166,12,1) 100%);
+.gradient {
+    background: rgb(0, 0, 5);
+    background: linear-gradient(90deg, rgba(0, 0, 5, 1) 0%, rgba(255, 106, 12, 1) 43%, rgba(255, 166, 12, 1) 100%);
 
-background: rgb(255,106,12);
-background: linear-gradient(90deg, rgba(255,106,12,1) 24%, rgba(255,166,12,1) 100%);
+    background: rgb(255, 106, 12);
+    background: linear-gradient(90deg, rgba(255, 106, 12, 1) 24%, rgba(255, 166, 12, 1) 100%);
 }
 
 
-.oferta{
+.oferta {
     font-family: 'Barlow Condensed',
         sans-serif;
-    
+
     font-weight: 500;
-   
+
 }
 
 
-.oferta35{
+.oferta35 {
     font-family: 'Barlow Condensed',
         sans-serif;
     font-weight: 700;
-   
+
 }
 
-.letra{
-  font-size: 1.2rem;  
+.letra {
+    font-size: 1.2rem;
 }
 
-@media screen and (max-width: 700px){
-      /* CONTADOR */
+
+
+/* bloque de senales DATATBLES */
+/*Overrides for Tailwind CSS */
+
+/*Form fields*/
+.dataTables_wrapper select,
+.dataTables_wrapper .dataTables_filter input {
+    color: #4a5568;
+    /*text-gray-700*/
+    padding-left: 1rem;
+    /*pl-4*/
+    padding-right: 1rem;
+    /*pl-4*/
+    padding-top: .5rem;
+    /*pl-2*/
+    padding-bottom: .5rem;
+    /*pl-2*/
+    line-height: 1.25;
+    /*leading-tight*/
+    border-width: 2px;
+    /*border-2*/
+    border-radius: .25rem;
+    border-color: #edf2f7;
+    /*border-gray-200*/
+    background-color: #edf2f7;
+    /*bg-gray-200*/
+}
+
+/*Row Hover*/
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
+    background-color: #ebf4ff;
+    /*bg-indigo-100*/
+}
+
+/*Pagination Buttons*/
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    font-weight: 700;
+    /*font-bold*/
+    border-radius: .25rem;
+    /*rounded*/
+    border: 1px solid transparent;
+    /*border border-transparent*/
+}
+
+/*Pagination Buttons - Current selected */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    color: #fff !important;
+    /*text-white*/
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    /*shadow*/
+    font-weight: 700;
+    /*font-bold*/
+    border-radius: .25rem;
+    /*rounded*/
+    background: #667eea !important;
+    /*bg-indigo-500*/
+    border: 1px solid transparent;
+    /*border border-transparent*/
+}
+
+/*Pagination Buttons - Hover */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #fff !important;
+    /*text-white*/
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    /*shadow*/
+    font-weight: 700;
+    /*font-bold*/
+    border-radius: .25rem;
+    /*rounded*/
+    background: #667eea !important;
+    /*bg-indigo-500*/
+    border: 1px solid transparent;
+    /*border border-transparent*/
+}
+
+/*Add padding to bottom border */
+table.dataTable.no-footer {
+    border-bottom: 1px solid #e2e8f0;
+    /*border-b-1 border-gray-300*/
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+/*Change colour of responsive icon*/
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+    background-color: #667eea !important;
+    /*bg-indigo-500*/
+}
+
+/* FIN DE BLOQUE DE DATA */
+
+@media screen and (max-width: 700px) {
+
+    /* CONTADOR */
     .simply-section {
         background: #000000;
         width: 80px;
@@ -302,8 +398,8 @@ background: linear-gradient(90deg, rgba(255,106,12,1) 24%, rgba(255,166,12,1) 10
         align-items: center;
         justify-content: center;
     }
-    
-     .simply-amount {
+
+    .simply-amount {
         margin: 0 auto;
         display: block;
         font-size: 30px;
@@ -320,31 +416,31 @@ background: linear-gradient(90deg, rgba(255,106,12,1) 24%, rgba(255,166,12,1) 10
 }
 
 @media screen and (max-width: 500px) {
-  
-    
-    .oferta{
-   font-size: 50px;
+
+
+    .oferta {
+        font-size: 50px;
     }
-    
-    .oferta35{
-   font-size: 80px;
+
+    .oferta35 {
+        font-size: 80px;
     }
-    
-    .letra{
-  font-size: 1rem;  
-}
+
+    .letra {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 350px) {
     .tarjetas {
         width: auto;
     }
-    
- 
+
+
 }
 
-@media screen and (max-width: 400px){
-    
+@media screen and (max-width: 400px) {
+
     /* CONTADOR */
     .simply-section {
         background: #000000;
@@ -374,53 +470,3 @@ background: linear-gradient(90deg, rgba(255,106,12,1) 24%, rgba(255,166,12,1) 10
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

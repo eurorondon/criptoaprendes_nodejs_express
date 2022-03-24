@@ -3,11 +3,12 @@
 
 <head>
     <!-- Required meta tags -->
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-</head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
     <title>Cripto Aprende</title>
 
     <!-- Bootstrap CSS -->
@@ -35,25 +36,27 @@
 
     <!-- favicon -->
     <link rel="icon" href="img/faviconcripto2.png" type="image/png" />
-    
+
     <!-- Facebook Pixel Code -->
-     <meta name="facebook-domain-verification" content="y0sysqy77ijsinpyr39ow8d7fzj18x" />
-    
-        <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+    <meta name="facebook-domain-verification" content="y0sysqy77ijsinpyr39ow8d7fzj18x" />
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1521414351585467');
         fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1521414351585467&ev=PageView&noscript=1"
-        /></noscript>
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1521414351585467&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 
 
@@ -63,23 +66,33 @@
 
 
 
-<!-- Facebook Pixel Code cruz  -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '703098953987116');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=703098953987116&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+    <!-- Facebook Pixel Code cruz  -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '703098953987116');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=703098953987116&ev=PageView&noscript=1" /></noscript>
+
+
+    <!-- End Facebook Pixel Code -->
+
+    <!--Regular Datatables CSS-->
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <!--Responsive Extension Datatables CSS-->
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
 
 </head>
 
@@ -90,7 +103,7 @@ src="https://www.facebook.com/tr?id=703098953987116&ev=PageView&noscript=1"
 
 
 
-    
+
 
     {{{body}}}
 
@@ -174,13 +187,49 @@ src="https://www.facebook.com/tr?id=703098953987116&ev=PageView&noscript=1"
         input.addEventListener('keyup', reset);
 
     </script>
-    
+
     <script src="js/progresbar.js"></script>
-    
-    
-<!-- scripts -->
-<script src="js/particles.js"></script>
-<script src="js/appparticles.js"></script>
+
+
+    <!-- scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/appparticles.js"></script>
+
+
+    {{!-- jquery datatable --}}
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--Datatables -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+    {{!-- scrip senales datatables --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users';
+            $('#users').DataTable({
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "apalancamiento" },
+                    { data: "entrada" },
+                    { data: "profitcorto" },
+                    { data: "profitmedio" },
+                    { data: "profitlargo" },
+                    { data: "stoploss" },
+                    { data: "link" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
 
 
 
