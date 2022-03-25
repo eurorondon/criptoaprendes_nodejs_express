@@ -173,8 +173,8 @@ app.get('/trading/nivel3', (req,res) => {
     res.render('nivel3');
 });
 
-app.get('/senales', (req,res) => {
-    res.render('senales');
+app.get('/senal', (req,res) => {
+    res.render('senal');
 });
 
 app.get('/compranvl1', (req,res) => {
