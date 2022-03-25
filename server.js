@@ -5,7 +5,7 @@ const mysql = require('mysql');
 const myconnection = require('express-myconnection');
 const multer = require('multer');
 const storage = multer.diskStorage({
-  destination: path.join(__dirname, 'public/upload') , 
+  destination: path.join(__dirname, 'public/entradas_img') , 
   filename: (req, file, cb) => {
     cb(null, file.originalname);
   }
@@ -43,11 +43,12 @@ app.use(myconnection(mysql, {
 
 app.use(multer({
   storage: storage,
-  dest: path.join(__dirname, 'public/upload')
+  dest: path.join(__dirname, 'public/entradas_img')
 }).single('image'));
 
 
-
+// Static files
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 

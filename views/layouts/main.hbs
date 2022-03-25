@@ -207,8 +207,8 @@
     <script>
         $(document).ready(function () {
             // const url = 'http://localhost:3000/api/users';
-            const url = 'https://herokutesteuro.herokuapp.com/api/users';
-            $('#users').DataTable({
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/binance_killers';
+            $('#binance_killers').DataTable({
                 ajax: {
                     url: url,
                     dataSrc: ''
@@ -223,6 +223,7 @@
                     { data: "profitlargo" },
                     { data: "stoploss" },
                     { data: "link" },
+                    { data: "resultado" },
 
                 ],
                 responsive: true
@@ -230,6 +231,143 @@
                 .responsive.recalc();
         })
     </script>
+
+    {{!-- scrip senales datatables --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/bitcoinbullet';
+            $('#bitcoinbullet').DataTable({
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "apalancamiento" },
+                    { data: "entrada" },
+                    { data: "profitcorto" },
+                    { data: "profitmedio" },
+                    { data: "profitlargo" },
+                    { data: "stoploss" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
+    {{!-- always_win --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/always_win';
+            $('#always_win').DataTable({
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "apalancamiento" },
+                    { data: "entrada" },
+                    { data: "profits" },
+                    { data: "stoploss" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
+
+    {{!-- trading_latino_semanal --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/latino_semanal';
+            $('#latino_semanal').DataTable({
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "entrada" },
+                    { data: "inversion" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
+
+    {{!-- trading_latino_diario --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/latino_diario';
+            $('#latino_diario').DataTable({
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "entrada" },
+                    { data: "inversion" },
+                    { data: "stoploss" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
+
+    {{!-- trading_latino_4h --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/latino_4h';
+            $('#latino_4h').DataTable({
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "entrada" },
+                    { data: "inversion" },
+                    { data: "stoploss" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
 
 
 
