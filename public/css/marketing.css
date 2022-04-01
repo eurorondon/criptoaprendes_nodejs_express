@@ -1,0 +1,573 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+    /* position: relative;   */
+}
+
+.navbar {
+    z-index: 1;
+}
+
+
+
+#particles-js {
+    width: 100%;
+    height: 45%;
+    /* background-color: #b61924; */
+    /* background-image: url(''); */
+    /* background-size: cover; */
+    background-position: 100% 100%;
+    /* background-repeat: no-repeat; */
+    position: absolute;
+    z-index: -1;
+
+}
+
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 150%;
+
+
+}
+.fas fa-check{
+    color:red;
+}
+
+.video {
+    max-width: 800px;
+    position: relative;
+
+}
+
+.video::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.resolucion-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-close{
+    color: #003378;
+}
+
+
+
+/* HEADER */
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 40px;
+    color: #003378;
+    display: none;
+    /* position: relative; */
+}
+
+.nav-main {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.nav-logo {
+    margin-left: 20px;
+    width: 60px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    background-color: #003378;
+    color: #ffff;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-menu a:hover {
+    background-color: #fa002b;
+    color: #ffff;
+    transition: .2s linear;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.membresia{
+    font-size:1.2rem;
+}
+
+
+/* Bloque 1  */
+
+.bloque1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 7%;
+    opacity: .95;
+}
+
+
+
+.flex1 {
+
+    width: 40%;
+    padding-left: 10px;
+    color: #ffff;
+
+}
+
+.titulo-negocioremesas {
+    width: 90%;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-negocioremesas h2 {
+    font-size: 42px;
+    font-weight: 600;
+
+}
+
+
+.contenido-negocioremesas {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.flex2 img {
+    width: 100%;
+    margin-right: -90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .compra {
+        display: none;
+    }
+
+    .botom-interno {
+        display: inline;
+        text-align: center;
+    }
+
+    .contenedor {
+        display: block;
+    }
+
+    .bloque1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 2% 3% 5% 3%;
+    }
+
+    .beneficios {
+        padding-top: 2%;
+    }
+
+    .scroll-cta {
+
+        bottom: 121px;
+        right: 2%;
+
+    }
+
+    .blanco {
+        height: 100px;
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .cta {
+        width: 150px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .tarjetas {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenido-slider {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bloque1 {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .flex1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tarjetas {
+
+        grid-template-columns: repeat(1, 500px);
+        justify-content: center;
+        align-items: center;
+        padding: 0 5px;
+    }
+
+    .bloque3 {
+        margin-bottom: 200px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .bloque1 {
+        display: flex;
+        
+    }
+
+    .imagen {
+        margin-bottom: 0;
+        margin-right: 0;
+
+    }
+
+    .imagen img {
+        width: 100%;
+
+    }
+
+    .tarjetas {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 60px;
+    }
+
+    .titulo-negocioremesas {
+        width: 100%;
+    }
+
+    .titulo-negocioremesas h2 {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+
+    }
+
+    .testimonios h3 {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .beneficios h3 {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+    .titulo-negocioremesas h2 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .contenido-negocioremesas {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .contenido-negocioremesas {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    .menu-btn {
+        display: unset;
+
+    }
+
+    .nav-menu {
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #f2f2f2;
+        height: 320px;
+        padding: 10px;
+        opacity: 0.95;
+        transform: translateX(-750px);
+        transition: transform 0.5s ease-in-out;
+        z-index: 1;
+
+    }
+
+    .show {
+        transform: translateX(0px);
+    }
+
+    ul.nav-menu li {
+        padding: 7.5px;
+        font-size: 14px;
+        border-bottom: 1px solid #7070704f;
+
+
+
+    }
+
+
+    .navigation a {
+        font-size: 10px;
+        color: #ffff;
+        padding: 0;
+        margin: 0;
+
+
+    }
+
+    .nav-logo {
+        margin: 0px;
+        margin-left: 30px;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+    }
+
+    .conten-foo {
+        margin: 10px;
+    }
+
+    .contenido-slider {
+        width: 100%;
+    }
+
+    .whatsapp img {
+        width: 280px;
+    }
+
+    .contenido-negocioremesas {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .bloque2 {
+        margin: 0 auto;
+    }
+
+
+    .contenido p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .quelograras h4 {
+        font-size: 18px;
+    }
+
+    .quelograras li {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+
+
+    .titulo-negocioremesas h2 {
+        text-align: left;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .tarjetas {
+
+        grid-template-columns: repeat(1, 1fr);
+        box-shadow: 0 0 0;
+        margin: 0 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .contenedor-footer {
+        flex-direction: column;
+    }
+
+    .conten-foo {
+        margin: 10px;
+    }
+
+    .contenido-slider {
+        width: 100%;
+    }
+}

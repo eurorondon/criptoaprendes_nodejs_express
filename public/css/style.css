@@ -1,0 +1,472 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cuenta regresiva   */
+
+
+
+
+/* CUENTA REGRESIVA */
+#cuenta {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.simply-section {
+    background: #000000;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simply-amount {
+    margin: 0 auto;
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.simply-word {
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+/* ? ---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BLOQUE 1  */
+.contenedor1 {
+    width: 100%;
+    background-image: url('../img/Fondo2.jpg');
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    padding-bottom: 50px;
+
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Condensed',
+        sans-serif;
+    color: #ffff;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.titulo h2 {
+    margin-top: 40px;
+    /* font-size: 40px; */
+    font-weight: 500;
+
+
+}
+
+.titulo h1 {
+    /* font-size: 60px; */
+    font-weight: 700;
+    /* margin-bottom: 40px; */
+}
+
+.titulo h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.animacion {
+    /*use esto para poder centrar el contenido, resulta que  como la ul y li traen unos puntos , me descentra */
+    margin-right: 30px;
+    margin-bottom: 10px;
+    /* margin-top: -40px; */
+    padding: 0;
+    /* width: 440px; */
+    height: 50px;
+    font-size: 40px;
+    line-height: 43px;
+    overflow: hidden;
+    /* background-color: #414141; */
+}
+
+.animacion ul {
+    /* list-style: none; */
+    animation: cambiar 7s infinite;
+    color: #f87523;
+    font-size: 40px;
+    font-weight: 700;
+    /* margin: 1px; */
+
+}
+
+@keyframes cambiar {
+    0% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: -40px;
+    }
+
+    50% {
+        margin-top: -40px;
+    }
+
+    55% {
+        margin-top: -80px;
+    }
+
+    80% {
+        margin-top: -80px;
+    }
+
+    85% {
+        margin-top: -40px;
+    }
+
+    95% {
+        margin-top: -40px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* cambiar color al mesange de formulario telefono */
+#error-msg {
+    color: gold;
+}
+
+
+
+
+
+/* Bloque 2  (Servicios  GRID) */
+.servicios {
+
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+
+
+}
+
+.servicios h2 {
+    /* font-size: 40px; */
+    /* margin-top: 40px; */
+    color: #0e1d47;
+    font-weight: 700;
+
+}
+
+.contenedor-servicios p {
+    font-size: 18px;
+
+}
+
+.tarjetas {
+    width: 18rem;
+}
+
+
+/* particles index  */
+#particles-js {
+
+    /* background-color: #b61924; */
+    /* background-image: url(''); */
+    /* background-size: cover; */
+
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    height: 45%;
+    background-position: 100% 100%;
+    position: absolute;
+
+
+
+}
+
+.gradient {
+    background: rgb(0, 0, 5);
+    background: linear-gradient(90deg, rgba(0, 0, 5, 1) 0%, rgba(255, 106, 12, 1) 43%, rgba(255, 166, 12, 1) 100%);
+
+    background: rgb(255, 106, 12);
+    background: linear-gradient(90deg, rgba(255, 106, 12, 1) 24%, rgba(255, 166, 12, 1) 100%);
+}
+
+
+.oferta {
+    font-family: 'Barlow Condensed',
+        sans-serif;
+
+    font-weight: 500;
+
+}
+
+
+.oferta35 {
+    font-family: 'Barlow Condensed',
+        sans-serif;
+    font-weight: 700;
+
+}
+
+.letra {
+    font-size: 1.2rem;
+}
+
+
+
+/* bloque de senales DATATBLES */
+/*Overrides for Tailwind CSS */
+
+/*Form fields*/
+.dataTables_wrapper select,
+.dataTables_wrapper .dataTables_filter input {
+    color: #4a5568;
+    /*text-gray-700*/
+    padding-left: 1rem;
+    /*pl-4*/
+    padding-right: 1rem;
+    /*pl-4*/
+    padding-top: .5rem;
+    /*pl-2*/
+    padding-bottom: .5rem;
+    /*pl-2*/
+    line-height: 1.25;
+    /*leading-tight*/
+    border-width: 2px;
+    /*border-2*/
+    border-radius: .25rem;
+    border-color: #edf2f7;
+    /*border-gray-200*/
+    background-color: #edf2f7;
+    /*bg-gray-200*/
+}
+
+/*Row Hover*/
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
+    background-color: #ebf4ff;
+    /*bg-indigo-100*/
+}
+
+/*Pagination Buttons*/
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    font-weight: 700;
+    /*font-bold*/
+    border-radius: .25rem;
+    /*rounded*/
+    border: 1px solid transparent;
+    /*border border-transparent*/
+}
+
+/*Pagination Buttons - Current selected */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    color: #fff !important;
+    /*text-white*/
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    /*shadow*/
+    font-weight: 700;
+    /*font-bold*/
+    border-radius: .25rem;
+    /*rounded*/
+    background: #667eea !important;
+    /*bg-indigo-500*/
+    border: 1px solid transparent;
+    /*border border-transparent*/
+}
+
+/*Pagination Buttons - Hover */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #fff !important;
+    /*text-white*/
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    /*shadow*/
+    font-weight: 700;
+    /*font-bold*/
+    border-radius: .25rem;
+    /*rounded*/
+    background: #667eea !important;
+    /*bg-indigo-500*/
+    border: 1px solid transparent;
+    /*border border-transparent*/
+}
+
+/*Add padding to bottom border */
+table.dataTable.no-footer {
+    border-bottom: 1px solid #e2e8f0;
+    /*border-b-1 border-gray-300*/
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+/*Change colour of responsive icon*/
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+    background-color: #667eea !important;
+    /*bg-indigo-500*/
+}
+
+/* FIN DE BLOQUE DE DATA */
+
+@media screen and (max-width: 700px) {
+
+    /* CONTADOR */
+    .simply-section {
+        background: #000000;
+        width: 80px;
+        height: 80px;
+        margin: 0 5px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .simply-amount {
+        margin: 0 auto;
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .simply-word {
+        font-weight: 300;
+        font-size: 15px;
+
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .oferta {
+        font-size: 50px;
+    }
+
+    .oferta35 {
+        font-size: 80px;
+    }
+
+    .letra {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .tarjetas {
+        width: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+    /* CONTADOR */
+    .simply-section {
+        background: #000000;
+        width: 70px;
+        height: 70px;
+        margin: 0 5px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .simply-amount {
+        margin: 0 auto;
+        display: block;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .simply-word {
+        font-weight: 300;
+        font-size: 12px;
+
+    }
+
+
+
+}
