@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <title>Cripto Aprende</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Iconos -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <!-- Tipo de Letra  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,500;1,400;1,500&family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/intlTelInput.css">
+
+
+    <!-- favicon -->
+    <link rel="icon" href="img/faviconcripto2.png" type="image/png" />
+
+    <!-- Facebook Pixel Code -->
+    <meta name="facebook-domain-verification" content="y0sysqy77ijsinpyr39ow8d7fzj18x" />
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1521414351585467');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1521414351585467&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+
+
+
+
+
+
+    <!-- Facebook Pixel Code cruz  -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '703098953987116');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=703098953987116&ev=PageView&noscript=1" /></noscript>
+
+
+    <!-- End Facebook Pixel Code -->
+
+    <!--Regular Datatables CSS-->
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <!--Responsive Extension Datatables CSS-->
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+
+
+    {{!-- {{>navbar}} --}}
+    {{>message}}
+
+    {{{body}}}
+
+    {{>footer}}
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+
+    <script src="js/intlTelInput.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- script PARA FORMULARIO -->
+    <script src="js/intlTelInput.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+    <!-- script PARA FORMULARIO -->
+    <script>
+        var input = document.querySelector("#phone");
+
+
+
+        var errorMsg = document.querySelector("#error-msg");
+        var validMsg = document.querySelector("#valid-msg");
+        var errorMap = [" Numero invalido !!!", "Codigo Pais Invalido !!!", "Numero muy corto !!!", "Numero muy largo!!!", "Numero invalido !!!"];
+
+        var iti = window.intlTelInput(input, {
+            nationalMode: false,
+            autoHideDialCode: false,
+            initialCountry: "auto",
+            geoIpLookup: function (callback) {
+                $.get('https://ipinfo.io', function () { }, "jsonp").always(function (resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "us";
+                    callback(countryCode);
+                });
+            },
+            utilsScript: "js/utils.js"
+        });
+
+        var reset = function () {
+            input.classList.remove("error");
+            errorMsg.innerHTML = "";
+            errorMsg.classList.add("hide");
+            validMsg.classList.add("hide");
+
+        };
+
+        input.addEventListener('blur', function () {
+            reset();
+            if (input.value.trim()) {
+                if (iti.isValidNumber()) {
+                    validMsg.classList.remove("hide");
+                } else {
+                    input.classList.add("error");
+                    var errorCode = iti.getValidationError();
+                    errorMsg.innerHTML = errorMap[errorCode];
+                    errorMsg.classList.remove("hide");
+                }
+            }
+        });
+
+        input.addEventListener('change', reset);
+        input.addEventListener('keyup', reset);
+
+    </script>
+
+    <script src="js/progresbar.js"></script>
+
+
+    <!-- scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/appparticles.js"></script>
+
+
+    {{!-- jquery datatable --}}
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--Datatables -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+    {{!-- scrip senales datatables --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/binance_killers';
+            $('#binance_killers').DataTable({
+                "order": [[0, "desc"]],
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "apalancamiento" },
+                    { data: "entrada" },
+                    { data: "profitcorto" },
+                    { data: "profitmedio" },
+                    { data: "profitlargo" },
+                    { data: "stoploss" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
+    {{!-- scrip senales datatables --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/bitcoinbullet';
+            $('#bitcoinbullet').DataTable({
+                "order": [[0, "desc"]],
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "apalancamiento" },
+                    { data: "entrada" },
+                    { data: "profits" },
+                    { data: "stoploss" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
+    {{!-- always_win --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/always_win';
+            $('#always_win').DataTable({
+                "order": [[0, "desc"]],
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "apalancamiento" },
+                    { data: "entrada" },
+                    { data: "profits" },
+                    { data: "stoploss" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
+
+    {{!-- trading_latino_semanal --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/latino_semanal';
+            $('#latino_semanal').DataTable({
+                "order": [[0, "desc"]],
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "entrada" },
+                    { data: "tiempo" },
+                    { data: "inversion" },
+                    { data: "stoploss" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
+
+    {{!-- trading_latino_diario --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/latino_diario';
+            $('#latino_diario').DataTable({
+                "order": [[0, "desc"]],
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "entrada" },
+                    { data: "tiempo" },
+                    { data: "inversion" },
+                    { data: "stoploss" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
+
+    {{!-- trading_latino_4h --}}
+    <script>
+        $(document).ready(function () {
+            // const url = 'http://localhost:3000/api/users';
+            const url = 'https://herokutesteuro.herokuapp.com/api/users/latino_4h';
+            $('#latino_4h').DataTable({
+                "order": [[0, "desc"]],
+                ajax: {
+                    url: url,
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: "id" },
+                    { data: "senal" },
+                    { data: "entrada" },
+                    { data: "tiempo" },
+                    { data: "inversion" },
+                    { data: "stoploss" },
+                    { data: "link" },
+                    { data: "resultado" },
+
+                ],
+                responsive: true
+            }).columns.adjust()
+                .responsive.recalc();
+        })
+    </script>
+
+
+
+
+
+</body>
+
+</html>

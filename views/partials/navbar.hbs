@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg navbar-light  bg-white p-0 border" id="menu">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-3 py-3" href="/"><img src="/img/50.png" alt="" width="120"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto p-3">
+                {{#if user}}
+                {{!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/links">All Links</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/links/add">Add A Link</a>
+                    </div>
+                </li> --}}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        {{user.username}}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/profile">Señales Trading</a></li>
+                        <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#blog">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacto">Contactanos</a>
+                </li>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/signin">LogIn</a>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#servicios">Servicios</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacto">Contactanos</a>
+                </li>
+                </li>
+                {{!-- <li class="nav-item">
+                    <a class="nav-link" href="/signup">SignUp</a>
+                </li> --}}
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</nav>
