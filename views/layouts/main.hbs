@@ -221,7 +221,26 @@
                     { data: "profitmedio" },
                     { data: "profitlargo" },
                     { data: "stoploss" },
-                    { data: "link" },
+                    {
+                        data: "link",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
+                    {
+                        data: "img_act",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
                     { data: "resultado" },
 
                 ],
@@ -249,7 +268,26 @@
                     { data: "entrada" },
                     { data: "profits" },
                     { data: "stoploss" },
-                    { data: "link" },
+                    {
+                        data: "link",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
+                    {
+                        data: "img_act",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
                     { data: "resultado" },
 
                 ],
@@ -277,7 +315,26 @@
                     { data: "entrada" },
                     { data: "profits" },
                     { data: "stoploss" },
-                    { data: "link" },
+                    {
+                        data: "link",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
+                    {
+                        data: "img_act",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
                     { data: "resultado" },
 
                 ],
@@ -306,7 +363,26 @@
                     { data: "tiempo" },
                     { data: "inversion" },
                     { data: "stoploss" },
-                    { data: "link" },
+                    {
+                        data: "link",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
+                    {
+                        data: "img_act",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
                     { data: "resultado" },
 
                 ],
@@ -335,7 +411,26 @@
                     { data: "tiempo" },
                     { data: "inversion" },
                     { data: "stoploss" },
-                    { data: "link" },
+                    {
+                        data: "link",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
+                    {
+                        data: "img_act",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
                     { data: "resultado" },
 
                 ],
@@ -353,6 +448,7 @@
             const url = 'https://herokutesteuro.herokuapp.com/api/users/latino_4h';
             $('#latino_4h').DataTable({
                 "order": [[0, "desc"]],
+
                 ajax: {
                     url: url,
                     dataSrc: ''
@@ -364,7 +460,26 @@
                     { data: "tiempo" },
                     { data: "inversion" },
                     { data: "stoploss" },
-                    { data: "link" },
+                    {
+                        data: "link",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
+                    {
+                        data: "img_act",
+                        "render": function (data, type, row, meta) {
+                            if (type === 'display') {
+                                data = '<a href="' + data + '">' + data + '</a>';
+                            }
+
+                            return data;
+                        }
+                    },
                     { data: "resultado" },
 
                 ],

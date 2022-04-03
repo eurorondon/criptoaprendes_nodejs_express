@@ -29,7 +29,8 @@
     "passport": "^0.5.0",
     "passport-local": "^1.0.0",
     "request": "^2.88.2",
-    "request-promise": "^4.2.6"
+    "request-promise": "^4.2.6",
+    "timeago.js": "^4.0.2"
   },
   "devDependencies": {
     "morgan": "^1.10.0",

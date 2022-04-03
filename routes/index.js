@@ -99,37 +99,6 @@ router.get('/oferta', (req,res) => {
     res.render('oferta');
 });
 
-router.get('/binancekiller', isLoggedIn, (req,res) => {
-    res.render('binancekiller');
-});
-
-router.get('/tradinglatino', isLoggedIn, (req,res) => {
-    res.render('latino');
-});
-
-router.get('/tradinglatinohold', isLoggedIn, (req,res) => {
-    res.render('latinohold');
-});
-
-router.get('/tradinglatino1d', isLoggedIn, (req,res) => {
-    res.render('latino1d');
-});
-
-router.get('/tradinglatino4h', isLoggedIn,(req,res) => {
-    res.render('latino4h');
-});
-
-router.get('/bitcoinbullet', isLoggedIn, (req,res) => {
-    res.render('bitcoinbullet');
-});
-
-router.get('/alwayswin', isLoggedIn, (req,res) => {
-    res.render('alwayswin');
-});
-
-router.get('/senales', isLoggedIn, (req,res) => {
-    res.render('senales');
-});
 
 
 

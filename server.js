@@ -10,6 +10,9 @@ const flash = require('connect-flash');
 const MySQLStore = require('express-mysql-session')(session);
 const validator = require('express-validator');
 const morgan = require('morgan');
+const feth = require('node-fetch');
+
+
 
 
 //app.use(validator());
@@ -94,6 +97,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //routes
 app.use(require('./routes/index'));
 app.use(require('./routes/authentication'));
+app.use(require('./routes/trader'));
 
 
 
@@ -115,6 +119,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(app.get('port'), () =>{
     console.log(`Server on port ${app.get('port')}`);
 });
+
+
+
 
 
 

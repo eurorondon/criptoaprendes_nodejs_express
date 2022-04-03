@@ -1,0 +1,39 @@
+{{>navbar}}
+<style>
+    body {
+        background-color: black;
+    }
+</style>
+{{!-- Stilo datatable --}}
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+<div class="container">
+    <img src="img/alwayswin.jpg" alt="" class="mx-auto rounded-circle mt-5 border border-white border-5"
+        style="max-width:20rem;">
+</div>
+
+
+<div class="container w-full md:w-4/5 xl:w-3/5  mx-auto px-2 my-4">
+    <div class="bg-green-400 bg-opacity-100 text-gray-100 text-center py-3">
+        <p class="text-xl"> Senales Always Win</p>
+    </div>
+    <div id='recipients' class="p-2 mt-6 lg:mt-0 rounded shadow bg-white">
+        <table id="always_win" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
+            <thead>
+                <tr class="bg-indigo-400 bg-opacity-100 text-white">
+                    <th data-priority="1">ID</th>
+                    <th data-priority="2">Senal</th>
+                    <th data-priority="3">Apalancamiento</th>
+                    <th data-priority="4">Entrada</th>
+                    <th data-priority="5">Profits</th>
+                    <th data-priority="8">Stop</th>
+                    <th data-priority="9">Imagen</th>
+                    <th data-priority="10">Imagen Actualizada</th>
+                    <th data-priority="11">Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
