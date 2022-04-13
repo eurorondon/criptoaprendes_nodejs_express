@@ -1,7 +1,39 @@
 <div class=" bg-black">
     <h2 class=" bg-warning text-black text-center py-3 "><b>Señales de Trading</b></h2>
     <div class="container ">
+        <p class="text-white text-center" style="font-size: 1.5rem;">⚠️Recomendaciónes para operar.</p>
+        <div class="card  bg-primary|secondary|success|danger|warning|info|light|dark|link">
+            {{!-- <img class="card-img-top" src="holder.js/100px180/" alt=""> --}}
+            <div class="card-body"><b>
+                    {{!-- <h4 class="card-title text-center">⚠️Recomendaciónes para operar .</h4> --}}
+                    <p class="card-text">
+                    <ul>
+                        <li>
+                            <p>1. Tener criterio propio al leer una señal, según su conocimiento evalúar si es viable o
+                                no entrar en dicha operación.</p>
+                        </li>
 
+                        <li>
+                            <p>2. Analizar la estrategia de cada trader , con la práctica y resultados podrás incluir o
+                                no estas técnicas en tu estrategia personal.</p>
+                        </li>
+
+                        <li>
+                            <p>3. Lo más peligroso de todo es que al obtener muchas entradas en este canal, desees
+                                entrar en todas las señales, y no <mark> diversificar el capital o liquidez... NUNCA SE
+                                    INVIERTE EL 100% </mark>...
+                                deben entrar con poco porcentaje y paciencia.</p>
+                        </li>
+                    </ul>
+                    <p>🟡 Operaciones Abiertas (Entrar en el rango).</p>
+                    <p>🟡🔒 Operacion Protegida al Precio de Entrada </p>
+                    <p>🟢Operaciones Ganadas.</p>
+                    <p>🔴Operaciones Perdidas.</p>
+                    <p>🔘Operaciones Cerradas al Precio de Entrada.</p>
+
+                </b>
+            </div>
+        </div>
 
         <div class="news-cards">
             {{!-- <div class="container"> --}}
@@ -92,5 +124,6 @@
                 {{!--
             </div> --}}
         </div>
+        {{>resumen_senales}}
     </div>
 </div>

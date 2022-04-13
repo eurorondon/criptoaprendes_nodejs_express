@@ -31,12 +31,12 @@ router.get('/bitcoinbullet', isLoggedIn, (req,res) => {
     res.render('traders/bitcoinbullet');
 });
 
-router.get('/alwayswin', isLoggedIn, (req,res) => {
-    res.render('traders/alwayswin');
+router.get('/russian', isLoggedIn, (req,res) => {
+    res.render('traders/russian');
 });
 
 router.get('/senales', isLoggedIn, (req,res) => {
-    res.render('traders/senales');
+    res.render('traders/inicio_traderssenales');
 });
 
 
